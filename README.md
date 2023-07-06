@@ -1,9 +1,13 @@
 # dotfiles
-https://archlinux.org/packages/extra/any/ttf-font-awesome/\ 
-git clone https://git.suckless.org/dwm\
-git clone https://git.suckless.org/slstatus\
-// Move the file into the belonging directory and compile:
+https://archlinux.org/packages/extra/any/ttf-font-awesome/
+
+git clone https://git.suckless.org/dwm
+
+git clone https://git.suckless.org/slstatus
+
+Move the file into the belonging directories and compile:
 ```
 sudo make clean install 
 ```
-requirments: rofi, st (https://git.suckless.org/st)
+requirements: xorg/X11, rofi, st (https://git.suckless.org/st)
+
