@@ -21,8 +21,8 @@ mv bin/slstatus/* slstatus
 
 rm -rf bin
 
-cd dwm; sudo make clean install -s 
-cd ../slstatus; sudo make clean install -s
+cd dwm; sudo make -s clean install
+cd ../slstatus; sudo make -s clean install
 
 cd ..
 
