@@ -31,3 +31,4 @@ cd ../slstatus; sudo make clean install > /dev/null
 cd ..
 
 printf "\033[1;32mCompleted!\033[1;0m\n"
+
