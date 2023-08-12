@@ -7,10 +7,10 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono:size=10" };
 static const char col_gray1[]       = "#000000"; // background color
-static const char col_gray2[]       = "#000000"; // inactive window border color
+static const char col_gray2[]       = "#FFFFFF"; // inactive window border color
 static const char col_gray3[]       = "#FFFFFF"; // font color
 static const char col_gray4[]       = "#FFFFFF"; // current tag and current window font color
-static const char col_cyan[]        = "#FFFFFF"; // top bar second color and active window border color
+static const char col_cyan[]        = "#000000"; // top bar second color and active window border color
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
