@@ -56,7 +56,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *roficmd[] = { "rofi", "-show", "drun", NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *screenshot[] = { "flameshot", "gui", "-c", NULL };
 
 static const Key keys[] = {

@@ -7,7 +7,12 @@ git clone https://git.suckless.org/slstatus
 
 Move the file into the belonging directories and compile:
 ```
-sudo make clean install 
+$ sudo make clean install 
 ```
-requirements: xorg/X11, rofi, alacritty
+requirements: xorg/X11, rofi, alacritty, flameshot
+
+***
+
+# *Install:*
+sudo chmod +x install 
 
