@@ -21,4 +21,9 @@ mv bin/slstatus/* slstatus
 
 rm -r bin
 
+cd dwm; sudo make clean install
+cd ../slstatus; sudo make clean install
+
+cd ..
+
 echo "\033[1;32mCompleted!\033[1;0m
