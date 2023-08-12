@@ -4,3 +4,6 @@
 
 **Install:**
 sudo chmod +x install 
+```
+$ ./install
+```
