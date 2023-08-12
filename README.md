@@ -13,6 +13,6 @@ requirements: xorg/X11, rofi, alacritty, flameshot
 
 ***
 
-# *Install:*
+## Install:
 sudo chmod +x install 
 
