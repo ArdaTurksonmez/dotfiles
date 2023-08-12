@@ -1,4 +1,24 @@
 #!/bin/bash
 
-mv .config/* ~/.config
 chmod +x scripts/setbg
+
+rm -rf ~/.config/alacritty; mv .config/* ~/.config
+rm -rf ~/.xinitrc ~/.zshrc; mv scripts \..* ~/
+
+mkdir bin
+cd bin
+git clone https://git.suckless.org/dwm --quiet; echo "Installed dwm"
+git clone https://git.suckless.org/slstatus --quiet; echo "Installed slstatus"
+
+cd dwm
+rm -f dwm.c; rm -f config.def.h
+cd ../slstatus
+rm -f config.def.h
+
+cd ../..
+mv bin/dwm/* dwm/
+mv bin/slstatus/* slstatus
+
+rm -r bin
+
+echo "\033[1;32mCompleted!\033[1;0m
