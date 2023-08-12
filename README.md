@@ -9,7 +9,7 @@ Move the file into the belonging directories and compile:
 ```
 $ sudo make clean install 
 ```
-requirements: xorg/X11, rofi, alacritty, flameshot
+requirements: xorg/X11, rofi, alacritty, flameshot, ttf-font-awesome
 
 ***
 
