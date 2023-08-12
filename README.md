@@ -1,6 +1,4 @@
 # dotfiles
-https://archlinux.org/packages/extra/any/ttf-font-awesome/
-
 git clone https://git.suckless.org/dwm
 
 git clone https://git.suckless.org/slstatus
