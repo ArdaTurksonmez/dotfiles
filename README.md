@@ -9,5 +9,5 @@ Move the file into the belonging directories and compile:
 ```
 sudo make clean install 
 ```
-requirements: xorg/X11, rofi, st (https://git.suckless.org/st)
+requirements: xorg/X11, rofi, alacritty
 
