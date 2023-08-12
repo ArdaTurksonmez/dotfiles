@@ -7,8 +7,8 @@ rm -rf ~/.xinitrc ~/.zshrc; mv scripts/.xinitrc scripts/.zshrc ~/
 
 mkdir bin
 cd bin
-git clone https://git.suckless.org/dwm --quiet; echo "Installed dwm"
-git clone https://git.suckless.org/slstatus --quiet; echo "Installed slstatus"
+git clone https://git.suckless.org/dwm --quiet; echo "\033[1;33mInstalled dwm\033[1;0m"
+git clone https://git.suckless.org/slstatus --quiet; echo "\033[1;33mInstalled slstatus\033[1;0m"
 
 cd dwm
 rm -f dwm.c; rm -f config.def.h
@@ -19,7 +19,7 @@ cd ../..
 mv bin/dwm/* dwm/
 mv bin/slstatus/* slstatus
 
-rm -r bin
+rm -rf bin
 
 cd dwm; sudo make clean install
 cd ../slstatus; sudo make clean install
