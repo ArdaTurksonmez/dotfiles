@@ -10,7 +10,7 @@ static const char col_gray1[]       = "#000000"; // background color
 static const char col_gray2[]       = "#000000"; // inactive window border color
 static const char col_gray3[]       = "#FFFFFF"; // font color
 static const char col_gray4[]       = "#646464"; // current tag and current window font color
-static const char col_cyan[]        = "#000000"; // top bar second color and active window border color
+static const char col_cyan[]        = "#000000"; /a/ top bar second color and active window border color
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
