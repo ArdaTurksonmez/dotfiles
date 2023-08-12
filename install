@@ -26,4 +26,4 @@ cd ../slstatus; sudo make clean install
 
 cd ..
 
-echo "\033[1;32mCompleted!\033[1;0m
+echo "\033[1;32mCompleted!\033[1;0m"
