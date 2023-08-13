@@ -13,8 +13,7 @@
 theme="style_2"
 
 dir="$HOME/.config/rofi/launchers/text"
-styles=($(ls -p --hide="colors.rasi" $dir/styles))
-color="${styles[$(( $RANDOM % 10 ))]}"
+color="styles/black.rasi"
 
 rofi -no-lazy-grab -show drun \
 -modi run,drun,window \
