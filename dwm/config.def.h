@@ -55,7 +55,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *roficmd[] = { "rofi", "-show", "drun", NULL };
+static const char *roficmd[] = { "rofiThemeLauncher", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *screenshot[] = { "flameshot", "gui", "-c", NULL };
 

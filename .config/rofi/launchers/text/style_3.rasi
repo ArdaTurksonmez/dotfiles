@@ -12,7 +12,7 @@ configuration {
     fixed-num-lines: 				true;
     show-icons: 					false;
     sidebar-mode: 					true;
-    scroll-method: 					1;
+    scroll-method: 					0;
     window-format: 					"[{w}] ··· {c} ···   {t}";
     click-to-exit: 					true;
     combi-hide-mode-prefix: 		false;
@@ -33,10 +33,9 @@ configuration {
 window {
     border: 						0px;
     border-color: 					@ac;
-    border-radius: 					12px;
-    padding: 						40;
-    width: 							50%;
-    height: 						50%;
+    border-radius: 					6px;
+    padding: 						15;
+    width: 							20%;
 }
 
 prompt {
@@ -76,14 +75,14 @@ mainbox {
 }
 
 listview {
-    lines:							10;
-    columns:						2;
+    lines:							6;
+    columns:						1;
     fixed-height: 					0;
     border: 						0px;
     border-color: 					@ac;
     spacing: 						4px;
     scrollbar: 						false;
-    padding: 						4px 0px 0px;
+    padding: 						5px 5px 0px 5px;
 }
 
 element-text, element-icon {
@@ -93,7 +92,8 @@ element-text, element-icon {
 
 element {
     border: 						0px;
-    padding: 						1px;
+    border-radius: 					4px;
+    padding: 						5px;
 }
 element normal.normal {
     background-color: 				@bg;
@@ -104,20 +104,20 @@ element normal.urgent {
     text-color:       				@red;
 }
 element normal.active {
-    background-color: 				@bg;
-    text-color:       				@green;
+    background-color: 				@green;
+    text-color:       				@bg;
 }
 element selected.normal {
-    background-color: 				@bg;
-    text-color:       				@ac;
+    background-color: 				@fg;
+    text-color:       				@bg;
 }
 element selected.urgent {
     background-color: 				@bg;
     text-color:       				@red;
 }
 element selected.active {
-    background-color: 				@bg;
-    text-color:       				@ac;
+    background-color: 				@fg;
+    text-color:       				@bg;
 }
 element alternate.normal {
     background-color: 				@bg;
@@ -135,25 +135,27 @@ element alternate.active {
 sidebar {
     border:       					0px;
     border-color: 					@ac;
-    border-radius: 					20px;
+    border-radius: 					0px;
 }
 
 button {
     horizontal-align:               0.5;
     vertical-align:                 0.5;
+    background-color:             	@fg;
     margin: 						5px;
     padding: 						5px;
-    text-color: 					@fg;
+    text-color: 					@bg;
     border: 						0px;
-    border-radius: 					20px;
+    border-radius: 					4px;
     border-color: 					@fg;
 }
 
 button selected {
+    background-color:             	@ac;
     text-color: 					@fg;
-    border: 						3px;
-    border-radius: 					20px;
-    border-color: 					@ac;
+    border: 						0px;
+    border-radius: 					4px;
+    border-color: 					@fg;
 }
 
 scrollbar {
