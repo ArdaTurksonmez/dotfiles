@@ -1,6 +1,6 @@
 # dotfiles
 
-**requirements: xorg/X11, rofi, alacritty, flameshot, ttf-font-awesome, jetbrainsmono, feh, zsh**
+**requirements: xorg/X11, rofi, alacritty, flameshot, ttf-font-awesome, ttf-iosevka-nerd, jetbrainsmono, feh, zsh**
 
 **Install:**
 
