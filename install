@@ -52,6 +52,9 @@ cd ../slstatus; sudo make clean install > /dev/null
 
 cd ..
 
+# Display Manager
+systemctl enable ly.service
+
 printf "\033[1;32mCompleted!\033[1;0m\n"
 
 sleep 1; clear
