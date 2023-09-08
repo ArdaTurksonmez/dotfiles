@@ -4,6 +4,8 @@
 
 **Install:**
 
+** After Running the install script the system will reboot**
+
 ```
 $ git clone https://github.com/ArdaTurksonmez/dotfiles.git
 $ cd dotfiles
