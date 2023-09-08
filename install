@@ -54,14 +54,11 @@ cd ..
 
 printf "\033[1;32mCompleted!\033[1;0m\n"
 
+sleep 1; clear
+
+printf "Rebooting...\n"
+
 sleep 1
 
-printf "\nWould you like to restart your computer right now\n in order to change your shell? y or n"
-printf "\nanswer: "; read restartcmd
-
-if [ $restartcmd == y ]; then
-  printf "Rebooting...\n"
-  reboot
-else
-  exit 0
-fi
+# Reboot the system for some changes to take effect
+reboot
