@@ -9,5 +9,4 @@ $ git clone https://github.com/ArdaTurksonmez/dotfiles.git
 $ cd dotfiles
 $ sudo chmod +x install 
 $ ./install
-$ startx
 ```
