@@ -16,6 +16,9 @@ chmod +x scripts/setbg
 rm -rf ~/.config/alacritty ~/.config/rofi; mv .config/* ~/.config
 rm -rf ~/.xinitrc ~/.zshrc; mv scripts/.xinitrc scripts/.zshrc ~/
 
+# Make xinitrc executable
+chmod +x ~/.xinitrc
+
 # Make Application Launcher theme executable
 chmod +x ~/.config/rofi/launchers/text/launcher
 sudo cp ~/.config/rofi/launchers/text/launcher /usr/local/bin/rofiThemeLauncher
