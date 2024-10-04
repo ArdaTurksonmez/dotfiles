@@ -3,7 +3,7 @@
 clear
 
 # Change Shell
-sudo chsh -s /usr/bin/zsh
+chsh -s /usr/bin/zsh
 
 clear
 
