@@ -13,8 +13,10 @@ printf "\033[1;34mInstalling...\033[1;0m\n"
 chmod +x scripts/setbg
 
 # Move config files to their correct spot
-rm -rf ~/.config/alacritty ~/.config/rofi; mv .config/* ~/.config
-rm -rf ~/.xinitrc ~/.zshrc; mv scripts/.xinitrc scripts/.zshrc ~/
+rm -rf ~/.config/alacritty ~/.config/rofi
+mv .config/* ~/.config
+rm -rf ~/.xinitrc ~/.zshrc
+mv scripts/.xinitrc scripts/.zshrc ~/
 
 # Make xinitrc executable
 chmod +x ~/.xinitrc
