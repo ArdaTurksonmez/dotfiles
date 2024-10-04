@@ -6,6 +6,8 @@
 
 If you are not using a fresh minimal install some things may break or not work 
 
+Make sure this script is ran as the user profile
+
 **Install:**
 
 After Running the **install script** the system will **reboot**
