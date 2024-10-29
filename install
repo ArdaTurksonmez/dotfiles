@@ -12,7 +12,7 @@ printf "\033[1;34mInstalling...\033[1;0m\n"
 # Allow the bgscript to be executable
 chmod +x scripts/setbg
 
-# Remove any previous configuration for
+# Remove any previous configuration
 if [ -d ~/.config ];
     rm -rf ~/.xinitrc ~/.zshrc
     rm -rf ~/.config/alacritty ~/.config/rofi
