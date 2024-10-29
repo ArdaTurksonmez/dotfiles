@@ -1,11 +1,11 @@
 # dotfiles
 
-**requirements: xorg/X11, rofi, alacritty, flameshot, ttf-iosevka-nerd, ttf-jetbrains-mono, feh, zsh, ly**
+**requirements: xorg/X11, rofi, alacritty, flameshot, sxhkd, ttf-iosevka-nerd, ttf-jetbrains-mono, deadbeef, feh, zsh, ly**
 
 Arch:
 ```
-sudo pacman -S xorg xorg-xinit rofi alacritty flameshot feh zsh ly
-yay/paru -S all-repository-fonts
+sudo pacman -S xorg xorg-xinit rofi alacritty flameshot sxhkd feh zsh ly
+yay/paru -S all-repository-fonts deadbeef
 ```
 
 **Warning:**

@@ -3,26 +3,37 @@
 clear
 
 # Change Shell
-chsh -s /usr/bin/zsh
-
-clear
+chsh -s /usr/bin/zsh; clear
 
 printf "\033[1;34mInstalling...\033[1;0m\n"
 
-# Allow the bgscript to be executable
+# Management of background script
 chmod +x scripts/setbg
 
 # Remove any previous configuration
 rm -rf ~/.xinitrc ~/.zshrc
 if [ -d "~/.config" ];
+then
     rm -rf ~/.config/alacritty ~/.config/rofi
 else
     mkdir ~/.config
 fi
 
-# Move config files to their correct spot
+# Plugin Manager Directory
+if [ ! -d "~/.local/lib/deadbeef" ];
+then
+    mkdir -p ~/.local/lib/deadbeef
+fi
+
+
+
+# Move script/config files to their proper locations
+sudo mv scripts/setbg /usr/local/bin
+mv .config/.xinitrc .config/.zshrc ~/
 mv .config/* ~/.config
-mv scripts/.xinitrc scripts/.zshrc ~/
+
+# Deadbeef Plugin Installation
+/usr/bin/install -v -c -m 644 ./scripts/ddb_misc_quick_search_GTK3.so ${HOME}/.local/lib/deadbeef/
 
 # Make xinitrc executable
 chmod +x ~/.xinitrc
@@ -31,40 +42,15 @@ chmod +x ~/.xinitrc
 chmod +x ~/.config/rofi/launchers/text/launcher
 sudo cp ~/.config/rofi/launchers/text/launcher /usr/local/bin/rofiThemeLauncher
 
-rm -rf .config
-
-# Donwload dwm as well as slstatus in a new folder
-mkdir bin
-cd bin
-git clone https://git.suckless.org/dwm --quiet; printf "\033[1;33mInstalled dwm\033[1;0m\n"
-git clone https://git.suckless.org/slstatus --quiet; printf "\033[1;33mInstalled slstatus\033[1;0m\n"
-
-# Merge dwm files
-cd dwm
-rm -f dwm.c; rm -f config.def.h
-cd ../slstatus
-rm -f config.def.h
-
-# Merge slstatus files
-cd ../..
-mv bin/dwm/* dwm/
-mv bin/slstatus/* slstatus
-
-# Remove the folder which previously had the 
-# fresh install of dwm and slstatus
-rm -rf bin
+# Removal of empty directories
+rm -rf .config scripts
 
 # Compile dwm and slstatus
 cd dwm; sudo make clean install > /dev/null
 cd ../slstatus; sudo make clean install > /dev/null
 
-cd ..
-
 # Display Manager
-systemctl enable ly.service
+sudo systemctl enable ly.service
 
-printf "\033[1;32mCompleted!\033[1;0m\n"
+printf "Reboot the system for any changes to take place.\n"
 
-sleep 1; clear
-
-printf "Reboot the system for any changes to take place."
