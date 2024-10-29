@@ -1,0 +1,11 @@
+# Increase/Decrease Volume
+XF86Audio{RaiseVolume,LowerVolume}
+    pactl set-sink-volume @DEFAULT_SINK@ {+5%,-5%}
+
+# Mute/Unmute Audio
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Play/Pause Audio
+XF86AudioPlay
+    playerctl play-pause

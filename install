@@ -25,12 +25,10 @@ then
     mkdir -p ~/.local/lib/deadbeef
 fi
 
-
-
 # Move script/config files to their proper locations
 sudo mv scripts/setbg /usr/local/bin
-mv .config/.xinitrc .config/.zshrc ~/
-mv .config/* ~/.config
+mv config/.xinitrc config/.zshrc ~/
+mv config/* ~/.config
 
 # Deadbeef Plugin Installation
 /usr/bin/install -v -c -m 644 ./scripts/ddb_misc_quick_search_GTK3.so ${HOME}/.local/lib/deadbeef/
@@ -43,7 +41,7 @@ chmod +x ~/.config/rofi/launchers/text/launcher
 sudo cp ~/.config/rofi/launchers/text/launcher /usr/local/bin/rofiThemeLauncher
 
 # Removal of empty directories
-rm -rf .config scripts
+rm -rf config scripts
 
 # Compile dwm and slstatus
 cd dwm; sudo make clean install > /dev/null
