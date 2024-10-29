@@ -12,10 +12,16 @@ printf "\033[1;34mInstalling...\033[1;0m\n"
 # Allow the bgscript to be executable
 chmod +x scripts/setbg
 
+# Remove any previous configuration for
+if [ -d ~/.config ];
+    rm -rf ~/.xinitrc ~/.zshrc
+    rm -rf ~/.config/alacritty ~/.config/rofi
+else
+    mkdir ~/.config
+fi
+
 # Move config files to their correct spot
-rm -rf ~/.config/alacritty ~/.config/rofi
 mv .config/* ~/.config
-rm -rf ~/.xinitrc ~/.zshrc
 mv scripts/.xinitrc scripts/.zshrc ~/
 
 # Make xinitrc executable
@@ -61,9 +67,4 @@ printf "\033[1;32mCompleted!\033[1;0m\n"
 
 sleep 1; clear
 
-printf "Rebooting...\n"
-
-sleep 1
-
-# Reboot the system for some changes to take effect
-reboot
+printf "Reboot the system for any changes to take place."
