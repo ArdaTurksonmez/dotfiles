@@ -9,12 +9,10 @@ yay/paru -S all-repository-fonts
 ```
 
 **Warning:**
-
-Make sure this script is ran as the user profile
+do not run this script under root privileges!
+run this script in the home directory of the chosen user.
 
 **Install:**
-
-After Running the **install script** the system will **reboot**
 
 ```
 $ git clone https://github.com/ArdaTurksonmez/dotfiles.git
