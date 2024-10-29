@@ -8,8 +8,6 @@ converter.output_folder /home/arda
 converter.output_format 0
 converter.overwrite_action 0
 deadbeef_version 1.9.6
-filechooser.lastdir file:///home/arda/Music
-filechooser.playlist.lastdir file:///home/arda/Music/Playlist
 gtkui.color.bar_background 65535 65535 65535
 gtkui.color.bar_foreground 13621 33924 58596
 gtkui.color.listview_even_row 0 0 0
