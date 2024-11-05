@@ -4,7 +4,7 @@ cli_add_playlist_name Default
 close_send_to_tray 0
 converter.dsp_preset -1
 converter.encoder_preset 0
-converter.output_folder /home/arda
+converter.output_folder ~/
 converter.output_format 0
 converter.overwrite_action 0
 deadbeef_version 1.9.6
@@ -27,7 +27,6 @@ gtkui.columns.search [{"title":"Artist / Album","id":"-1","format":"$if(%artist%
 gtkui.eq.visible 0
 gtkui.hide_remove_from_disk 1
 gtkui.hide_tray_icon 0
-gtkui.last_playlist_save_name /home/arda/Music/Playlist/Lofi.dbpl
 gtkui.layout.1.9.0 {"type":"hsplitter","legacy_params":" locked=1 ratio=0.100521 pos=193 size2=0","children":[{"type":"vsplitter","legacy_params":" locked=0 ratio=0.800000 pos=0 size2=0","children":[{"type":"vsplitter","legacy_params":" locked=1 ratio=0.907035 pos=722 size2=0","children":[{"type":"pltbrowser"},{"type":"scope","settings":{"renderMode":"multichannel","scaleMode":"auto","fragmentDuration":"300"}}]},{"type":"coverart","settings":{"mode":"selected"}}]},{"type":"vsplitter","legacy_params":" locked=2 ratio=0.059296 pos=0 size2=933","children":[{"type":"vsplitter","legacy_params":" locked=2 ratio=0.322034 pos=0 size2=37","children":[{"type":"seekbar"},{"type":"hsplitter","legacy_params":" locked=2 ratio=0.940835 pos=0 size2=99","children":[{"type":"playtb"},{"type":"volumebar","settings":{"scale":"db"}}]}]},{"type":"vsplitter","legacy_params":" locked=0 ratio=0.016077 pos=0 size2=0","children":[{"type":"quick_search","legacy_params":""},{"type":"playlist","legacy_params":" hideheaders=0 width=1724"}]}]}]}
 gtkui.override_bar_colors 0
 gtkui.override_listview_colors 0
@@ -116,14 +115,12 @@ playlist.scroll.1 0
 playlist.scroll.2 0
 playlist.scroll.3 0
 playlist.scroll.cursorfollowplayback 1
-playlist.tab.00000 Lofi
-playlist.tab.00001 Main
 prefwin.geometry.h 596
 prefwin.geometry.w 761
 prefwin.geometry.x 579
 prefwin.geometry.y 251
 quick_search.append_search_string 0
-quick_search.history_size 10.000000
+quick_search.history_size 5.000000
 resume.paused 0
 resume.playlist -1
 resume.position -1.000000
