@@ -9,3 +9,7 @@ XF86AudioMute
 # Play/Pause Audio
 XF86AudioPlay
     playerctl play-pause
+
+# Disable MMB Copy&Paste
+~button2
+    ;echo -n | xclip -in
