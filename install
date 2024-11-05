@@ -1,11 +1,9 @@
 #!/bin/bash
 
-clear
+clear; mkdir backup/
 
 # Change Shell
 chsh -s /usr/bin/zsh; clear
-
-printf "\033[1;34mInstalling...\033[1;0m\n"
 
 # Management of background script
 chmod +x scripts/setbg
@@ -50,4 +48,4 @@ cd ../slstatus; sudo make clean install > /dev/null
 # Display Manager
 sudo systemctl enable ly.service
 
-clear; printf "Reboot the system for any changes to take place.\n"
+clear; printf "\e[0;32mReboot the system for any changes to take place.\e[0;32m\n"
