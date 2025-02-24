@@ -1,0 +1,19 @@
+#!/bin/bash
+
+resetTime () {
+    date +"%b, %a %I:%M %p"
+}
+
+currentTime=$(resetTime)
+xsetroot -name "$currentTime"
+
+while true; do
+    sleep 15
+    updatedTime=$(resetTime)
+
+    if [ "$currentTime" != "$updatedTime" ]; then
+        currentTime=$(resetTime)
+        xsetroot -name "$currentTime"
+    fi
+done
+

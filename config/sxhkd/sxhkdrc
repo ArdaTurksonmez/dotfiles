@@ -13,3 +13,4 @@ XF86AudioPlay
 # Disable MMB Copy&Paste
 ~button2
     ;echo -n | xclip -in
+
